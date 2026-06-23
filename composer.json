@@ -1,0 +1,11 @@
+{
+  "name": "algusto/sistema-tarefas-php",
+  "description": "Gerenciador de tarefas desenvolvido em PHP puro.",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {}
+}
