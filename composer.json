@@ -18,7 +18,7 @@
     "sort-packages": true
   },
   "scripts": {
-    "serve": "php -S localhost:8000 -t public",
+    "serve": "php -S localhost:8000 -t public public/router.php",
     "check:database": "php scripts/check-database.php"
   }
 }
