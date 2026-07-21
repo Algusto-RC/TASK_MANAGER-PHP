@@ -1,11 +1,24 @@
 {
   "name": "algusto/sistema-tarefas-php",
-  "description": "Gerenciador de tarefas desenvolvido em PHP puro.",
+  "description": "Gerenciador de tarefas desenvolvido em PHP puro, MySQL e PDO.",
   "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": "^8.1",
+    "ext-json": "*",
+    "ext-pdo": "*"
+  },
   "autoload": {
     "psr-4": {
       "App\\": "app/"
     }
   },
-  "require": {}
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "scripts": {
+    "serve": "php -S localhost:8000 -t public",
+    "check:database": "php scripts/check-database.php"
+  }
 }
